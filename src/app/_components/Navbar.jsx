@@ -6,7 +6,7 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('');
 
   const navLinks = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '#hero' },
     { name: 'Features', href: '#features' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'Community', href: '#community' }
@@ -62,7 +62,7 @@ const Navbar = () => {
             className="
               text-white px-4 py-2 rounded-full 
               border border-gray-200 
-              hover:bg-gray-800 
+              hover:bg-white hover:text-purple-700
               transition duration-300
               transform hover:scale-105
             "
@@ -158,8 +158,9 @@ const Navbar = () => {
                   py-2 
                   rounded-full 
                   border 
-                  border-gray-700 
-                  hover:bg-gray-800
+                  border-white-700 
+                  hover:bg-white-800
+                  hover:text-purple-600
                 "
               >
                 Sign In
