@@ -59,14 +59,14 @@ const LandingPage = () => {
  
 
   return (
-    <div className="bg-black text-white min-h-screen">\
+    <div className="bg-black text-white min-h-screen md:px-10">\
     
      <Navbar/>
      <main>
       <HeroSection/>
      </main>
    {/* Features Navigation */}
-   <div className="container mx-auto px-4 py-16 pb-28">
+   <div className="container mx-auto px-4 py-16 pb-28 w-full">
         <div className="flex justify-center space-x-4 mb-10">
           {features.map((feature) => (
             <button
@@ -109,7 +109,7 @@ const LandingPage = () => {
         </div>
         </div>
           {/* Testimonials Section */}
-      <div className="container mx-auto px-4 py-28 bg-gray-900">
+      <div className="container mx-auto w-full px-4 py-28 bg-transparent rounded-md">
         <h2 className="text-4xl font-bold text-center mb-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
           What Developers Say
         </h2>
@@ -117,7 +117,7 @@ const LandingPage = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={index} 
-              className="bg-black p-6 rounded-lg shadow-lg"
+              className="bg-gray-900 p-6 rounded-lg shadow-lg"
             >
               <p className="text-gray-300 italic mb-4">&quot;{testimonial.quote}&quot;</p>
               <div className="flex items-center">
